@@ -23,8 +23,14 @@ class Ticket extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
    public function callback(){
-       $postdata = $this->input->raw_input_stream;
-       log_message('debug',json_encode($postdata));
+       $postData = $this->input->raw_input_stream;
+       log_message('debug',$postData);
+       $postArray = json_decode($postData,true);
+       if(isset($postArray['code'])){
+           $this->load->model('TicketModel', '', TRUE);
+           $ticketModel = new TicketModel();
+           $ticketModel->getOrInsertTicket($postArray);
+       }
    }
 
 }
