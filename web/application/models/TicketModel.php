@@ -32,6 +32,7 @@ class TicketModel extends CI_Model {
             }else{
                 $insertData =[];
                 $insertData ['ticket_code']= $data['code'];
+                $insertData ['ticket_status']= $data['status'];
                 $insertData ['ticket_order_id']= $data['order_id'];
                 $insertData ['ticket_ticket_id']= $data['ticket_id'];
                 $insertData ['ticket_event_id']= $data['event_id'];
