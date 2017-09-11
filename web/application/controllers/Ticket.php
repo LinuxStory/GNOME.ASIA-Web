@@ -23,7 +23,7 @@ class Ticket extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
    public function callback(){
-       $postdata = $this->input->raw_input_stream();
+       $postdata = $this->input->raw_input_stream;
        log_message('debug',json_encode($postdata));
    }
 
