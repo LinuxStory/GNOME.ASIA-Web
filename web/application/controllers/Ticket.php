@@ -22,4 +22,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+   public function callback(){
+       $postdata = $this->input->post(TRUE);
+       log_message('info',json_encode($postdata));
+   }
+
 }
