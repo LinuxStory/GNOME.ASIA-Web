@@ -25,7 +25,7 @@ class TicketModel extends CI_Model {
     public function getOrInsertTicket($data){
 
         if($data['code']){
-            $query = $this->db->get_where('ticket',['ticket_code'=>$data['code'],'companyIsValid'=>1],1);
+            $query = $this->db->get_where('ticket',['ticket_code'=>$data['code']],1);
             $resultArray = $query->row_array();
             if(isset($resultArray['ticket_id'])){
                 return $resultArray['ticket_id'];
