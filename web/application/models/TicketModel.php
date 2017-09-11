@@ -30,7 +30,6 @@ class TicketModel extends CI_Model {
             if(isset($resultArray['ticket_id'])){
                 return $resultArray['ticket_id'];
             }else{
-                'ticket_';
                 $insertData =[];
                 $insertData ['ticket_code']= $data['code'];
                 $insertData ['ticket_order_id']= $data['order_id'];
