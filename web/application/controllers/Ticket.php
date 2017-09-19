@@ -46,7 +46,6 @@ class Ticket extends CI_Controller {
         ];
         $code = $this->input->post('code');
         if($code){
-
             $this->load->model('TicketModel', '', TRUE);
             $ticketModel = new TicketModel();
             $result= $ticketModel->getTicketByCode($code);
