@@ -1,9 +1,14 @@
 #接口文档
 ##登录
+
 ###地址
+
 http://gnome.liumax.com/ticket/getTicketInfoByCode
+
 ###参数
+
 code 票号
+
 ###返回值
 
         {
