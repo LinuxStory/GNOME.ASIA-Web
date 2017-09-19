@@ -13,11 +13,11 @@ class TicketModel extends CI_Model {
         parent::__construct();
         // Your own constructor code
     }
-    public function getCompanyNameById($company){
-        $query = $this->db->get_where('company',['companyId'=>$company,'companyIsValid'=>1],1);
+    public function getTicketByCode($code){
+        $query = $this->db->get_where('ticket',['ticket_code'=>$code],1);
         $resultArray = $query->row_array();
-        if(isset($resultArray['companyName'])){
-            return $resultArray['companyName'];
+        if(isset($resultArray['ticket_id'])){
+            return $resultArray;
         }else{
             return false;
         }

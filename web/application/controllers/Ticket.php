@@ -40,5 +40,22 @@ class Ticket extends CI_Controller {
        }
        echo json_encode($resultData);
    }
+    public function getTicketInfoByCode(){
+        $resultData =[
+            'code'=>1
+        ];
+        $code = $this->input->post('code');
+        if($code){
+
+            $this->load->model('TicketModel', '', TRUE);
+            $ticketModel = new TicketModel();
+            $result= $ticketModel->getTicketByCode($code);
+            if($result){
+                $resultData['code'] =0;
+                $resultData['data'] =$result;
+            }
+        }
+        echo json_encode($resultData);
+    }
 
 }
