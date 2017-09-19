@@ -56,5 +56,8 @@ class Ticket extends CI_Controller {
         }
         echo json_encode($resultData);
     }
+    public function getSpeakInfo(){
+
+    }
 
 }
