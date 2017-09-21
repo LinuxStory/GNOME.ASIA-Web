@@ -179,8 +179,7 @@ class Ticket extends CI_Controller
                 ]
             }
         }';
-        var_dump(json_decode($json));
-        var_dump(json_decode($json, true));
+        echo $json;
     }
 }
 
