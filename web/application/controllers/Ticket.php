@@ -171,7 +171,7 @@ class Ticket extends CI_Controller
                     {"titile":"Closing speech","speark":"Local organizer & GNOME.Asia","startime":"17:40","endtime":"18:00"},
                     {"titile":"End of Day 2","speark":"NULL","startime":"18:00","endtime":"18:00"}
                 ],
-                "社區專場":
+                "510":
                 [
                     {"titile":"Newcomes workshop Ekaterina","speark":"Gerasimova (Kat) + others","startime":"9:55","endtime":"10:10"},
                     {"titile":"Newcomes workshop Ekaterina","speark":"Gerasimova (Kat) + others","startime":"10:10","endtime":"10:55"},
