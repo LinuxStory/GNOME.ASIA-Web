@@ -340,7 +340,6 @@ class Ticket extends CI_Controller
               "startime": "13:40",
               "endtime": "14:25"
             }
-            }
           ]
         },
         {
@@ -701,7 +700,6 @@ class Ticket extends CI_Controller
               "startime": "13:40",
               "endtime": "14:25"
             }
-            }
           ]
         },
         {
@@ -1061,7 +1059,6 @@ class Ticket extends CI_Controller
               "speark": "Chingkai Chu/朱庆凯",
               "startime": "13:40",
               "endtime": "14:25"
-            }
             }
           ]
         },
